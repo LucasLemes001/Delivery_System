@@ -1,0 +1,77 @@
+Steps By Steps
+===============
+Powerfull links:
+    CSS REFERENCE - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference
+    HTML REFERENCE - https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
+    JAVASCRIPT REFERENCE - https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-introduction/cheatsheet
+    ICONS TO USE - https://fontawesome.com/icons
+    Bootstrap - https://getbootstrap.com/    5.0.2
+    Js Animation - https://wowjs.uk/
+
+1. Create a new repository on GitHub
+2. Create a new branch
+3. create a gitignore file, requiriments.txt file, and README
+4. Create the new folders that we going to use:
+    - css: coitaining the bootstrap
+    - fonts: containing the fonts and icons configuration
+    -js:: containing the javascript
+    -img: containing the images of our project
+
+
+Starting The Structure
+====================
+
+I've create a file called index.html. This file is the "main" file to the project. and out a html:5 structure.
+inside the tag <head></head>:
+    * Was used the <link> tag to link the css files, such as bootstrap, fonts and javascript and main.
+inside the tag <body></body>:
+    * Near to the and of the body's tag was opened two <scripts></scripts> tags.
+        * One for the bootstrap.bundle.min.js
+        * Another for our cardapio.min.js
+
+With this, the first step for the structure is done.
+
+
+Starting create the Homepage
+==========================
+
+Create a tag <div class="bg-top"> inside index.html
+
+Inside the ./css/main.css:
+    * Summon the Poppins Fonts using:
+#         @font-face {
+#     font-family: 'PoppinsMedium';
+#     src: url('../fonts/Poppins-Medium.otf');
+# }
+
+# @font-face {
+#     font-family: 'PoppinsRegular';
+#     src: url('../fonts/Poppins-Regular.otf');
+# }
+
+    * Configure the Colors Variable we going to use in our project, Saving some time and space,
+    for not doing all the configuration manually in each elements. Did just like this:
+        # * :root {
+        #     --color-name_as_you_wish: #colorcode;
+        #     }
+
+    * Configure the html and body's color and fonts-size:
+        * Just like this:
+            # html,body {
+            #     background-color: var(color-the_name_I_gave_to_the_background_color);
+            #     font-family: 'PoppinsRegular';'Rubok','sans-serif';     NOTE -> USE MORE THAN ONE, BEACUSE IF THE FONT INST FOUND IN ONE FILE, THAN THE SCRIPT WILL SEARCH IN ANOTHER ONE.
+            #     font-size: 16px;
+            #     color: var(color-the_name_I_gave_to_the_text_color);}
+                
+            
+    * Create the same div class we've create inside index.html. (class="bg-top")
+        * Add the configuration to then, just like this:
+            <!-- - .bg-top {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    height: 110px;
+                    background-color: var(--color-secondary);
+            } -->
+
