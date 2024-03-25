@@ -40,3 +40,33 @@ html,body {
     height: 110px;
     background-color: var(--color-secondary);
 }
+
+.width-fix{
+    width: calc(100% - 20px);
+    margin: 0px auto;
+
+}
+
+.card {
+    border-radius: 20px;
+    padding: 15px  20px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+}
+
+.container-img {
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px ;
+    border-radius: 20px;
+}
+
+.infos{
+    /* above hare, the "flex:1" means that will take all of the space that is left inside the card. */
+    flex: 1;
+}

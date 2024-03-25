@@ -75,3 +75,45 @@ Inside the ./css/main.css:
                     background-color: var(--color-secondary);
             } -->
 
+    * Create one bord in "Index.html" that will be our base with:
+        1. Pizza companny's name and logo.
+        2. Some Information:
+            * Open/Close
+            * See more
+        3. The board himself.
+            
+            To do this, we need to create some <header></header> tag, and name it with a class. (I name it "width-fix mt-5").
+                Start the board cointainer with a <div class="card"></div>
+                Because will cointain the companny's name, logo and information.
+
+                    Inside this shit, we need to create another <div></div> tag, and name it with a class. (I name it "img-container") Beacuse will cointain the Companny's logo.
+
+                    Another <div></div> tag, and name it with a class. (I name it "infos") Beacuse will cointain the Companny's information:
+                        1. <h1><p> Companny's name</p></h1>
+
+                        2. <div class="infos-sub></div>
+                            Inside it, put the secondary information.
+                                : Open/Close
+                                    <p class="status open"><i class="fas fa-clock">  Open  </i></p>
+                                : See more
+                                    <a hrtf="#" class="see-more"> See more</a>
+
+    This board could bee styled inside the css file. Inside "main.css" create the same header class name.]
+    <!-- .width-fix {
+        width: calc(100% - 20px);    # To always discard some space for scrolling
+        margin: 0px auto;             # To center the board with the screen
+    } -->
+
+==============================
+TIPS FOR WHAT HAPPEN UP HERE
+==============================
+ When you have a "card" or something similar, wich you cointain and Image, subtitle, links or something else
+ in the same place, centered in the middle of the card, always separate thing in slices.
+
+ =============================
+        TIPS TO HTML/CSS
+ ==============================
+ Always create the tags classes, id or stuffs inside the main project  "index.html", and then
+ style it inside the css file "main.css". 
+
+ 
