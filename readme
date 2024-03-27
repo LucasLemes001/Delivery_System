@@ -7,6 +7,7 @@ Powerfull links:
     ICONS TO USE - https://fontawesome.com/icons
     Bootstrap - https://getbootstrap.com/    5.0.2
     Js Animation - https://wowjs.uk/
+    CSS DISPLAY FELX - https://flexbox.help/
 
 1. Create a new repository on GitHub
 2. Create a new branch
@@ -117,3 +118,28 @@ TIPS FOR WHAT HAPPEN UP HERE
  style it inside the css file "main.css". 
 
  
+
+=============
+    Creating a Categories Menu's info
+================
+
+1. Inside the "index.html" starting the tags and classes <section></section>
+    . I name the class "categoria width-fix mt-4" --> This means that will cointain the same width that has the  header board, and the same margin-top and padding.
+2. On the "section" tag, it starts the sctructure of the menu's category with a "div" tag. I named "item-categoria btn btn-white btn-sm mb-3 me-03"
+    . This means that this <div> can have 4 names inside and others configuration:
+        1. The item-categoria
+        2. btn
+        3  btn-white
+        4  btn-sm
+        config: margin-bottom: 3px; margin-external: 3px;
+
+    ====
+    Check the main.css file to see exactly how to style the menu's category.
+    =====
+
+3. Inside the <div> upon, I put the differents type of categories inside, they are very similar, only a few changes can transfor their icon, color and stufs. check inside the main.css file: 
+         ".item-categoria{}",
+         ".btn{}"
+         ".btn-white{}",
+         ".btn-sm{}"
+         ".btn-white:hover, btn-white.active{}"
