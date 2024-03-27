@@ -160,3 +160,57 @@ section.categoria {
     
 
 }
+
+
+.title-categoria {
+    color: var(--color-black);
+    margin-left: 15px;
+
+}
+
+.container-group .card {
+    padding: 15px; /* fazer isso para descolar o card do topo*/
+    cursor: pointer; /* Para transformar o cursor em maozinha*/
+}
+
+/* .item-cardapio {
+    padding: 15px;  THIS IS THE SAME THING THAT MADE THE .container-group .card
+    cursor: pointer;
+} */
+
+.container-img-produto {
+    width: 100px; /* Para definir a largura da imagem*/
+    height: 100px; /* Para definir a altura da imagem*/
+    background-repeat: no-repeat; /* para nao ficar um monte de quadradinhos*/
+    background-position: center; /* para centralizar a imagem */
+    background-color: var(--color-secondary); /* Se nao carregar a img, ter uma cor de fundo*/
+    border-radius: 15px;   /*  para arredondar as bordas*/
+    margin-right: 20px /* para descolar a img do texto*/;
+    flex: none /*Pra nao pegar nenhuma propriedade do flex*/;
+}
+
+.infos-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infos-produto .name {
+    font-size: 18px;
+    color: var(--color-black);
+    margin-bottom: 0px; /*tags P ja tem margin bottom padrao*/
+}
+
+
+.infos-produto .description {
+    font-size: 14px;
+    color: var(--color-text);
+    margin-bottom: 5px;
+}
+
+
+.infos-produto .price {
+    font-size: 16px;
+    color: var(--color-primary);
+    margin-bottom: 0px;
+}
