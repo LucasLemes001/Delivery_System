@@ -1,4 +1,4 @@
-Steps By Steps
+
 ===============
 Powerfull links:
     CSS REFERENCE - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference
@@ -9,34 +9,9 @@ Powerfull links:
     Js Animation - https://wowjs.uk/
     CSS DISPLAY FELX - https://flexbox.help/
 
-1. Create a new repository on GitHub
-2. Create a new branch
-3. create a gitignore file, requiriments.txt file, and README
-4. Create the new folders that we going to use:
-    - css: coitaining the bootstrap
-    - fonts: containing the fonts and icons configuration
-    -js:: containing the javascript
-    -img: containing the images of our project
 
 
-Starting The Structure
-====================
 
-I've create a file called index.html. This file is the "main" file to the project. and out a html:5 structure.
-inside the tag <head></head>:
-    * Was used the <link> tag to link the css files, such as bootstrap, fonts and javascript and main.
-inside the tag <body></body>:
-    * Near to the and of the body's tag was opened two <scripts></scripts> tags.
-        * One for the bootstrap.bundle.min.js
-        * Another for our cardapio.min.js
-
-With this, the first step for the structure is done.
-
-
-Starting create the Homepage
-==========================
-
-Create a tag <div class="bg-top"> inside index.html
 
 Inside the ./css/main.css:
     * Summon the Poppins Fonts using:
@@ -56,60 +31,7 @@ Inside the ./css/main.css:
         #     --color-name_as_you_wish: #colorcode;
         #     }
 
-    * Configure the html and body's color and fonts-size:
-        * Just like this:
-            # html,body {
-            #     background-color: var(color-the_name_I_gave_to_the_background_color);
-            #     font-family: 'PoppinsRegular';'Rubok','sans-serif';     NOTE -> USE MORE THAN ONE, BEACUSE IF THE FONT INST FOUND IN ONE FILE, THAN THE SCRIPT WILL SEARCH IN ANOTHER ONE.
-            #     font-size: 16px;
-            #     color: var(color-the_name_I_gave_to_the_text_color);}
-                
-            
-    * Create the same div class we've create inside index.html. (class="bg-top")
-        * Add the configuration to then, just like this:
-            <!-- - .bg-top {
-                    position: absolute;
-                    top: 0px;
-                    left: 0px;
-                    right: 0px;
-                    height: 110px;
-                    background-color: var(--color-secondary);
-            } -->
 
-    * Create one bord in "Index.html" that will be our base with:
-        1. Pizza companny's name and logo.
-        2. Some Information:
-            * Open/Close
-            * See more
-        3. The board himself.
-            
-            To do this, we need to create some <header></header> tag, and name it with a class. (I name it "width-fix mt-5").
-                Start the board cointainer with a <div class="card"></div>
-                Because will cointain the companny's name, logo and information.
-
-                    Inside this shit, we need to create another <div></div> tag, and name it with a class. (I name it "img-container") Beacuse will cointain the Companny's logo.
-
-                    Another <div></div> tag, and name it with a class. (I name it "infos") Beacuse will cointain the Companny's information:
-                        1. <h1><p> Companny's name</p></h1>
-
-                        2. <div class="infos-sub></div>
-                            Inside it, put the secondary information.
-                                : Open/Close
-                                    <p class="status open"><i class="fas fa-clock">  Open  </i></p>
-                                : See more
-                                    <a hrtf="#" class="see-more"> See more</a>
-
-    This board could bee styled inside the css file. Inside "main.css" create the same header class name.]
-    <!-- .width-fix {
-        width: calc(100% - 20px);    # To always discard some space for scrolling
-        margin: 0px auto;             # To center the board with the screen
-    } -->
-
-==============================
-TIPS FOR WHAT HAPPEN UP HERE
-==============================
- When you have a "card" or something similar, wich you cointain and Image, subtitle, links or something else
- in the same place, centered in the middle of the card, always separate thing in slices.
 
  =============================
         TIPS TO HTML/CSS
@@ -119,27 +41,3 @@ TIPS FOR WHAT HAPPEN UP HERE
 
  
 
-=============
-    Creating a Categories Menu's info
-================
-
-1. Inside the "index.html" starting the tags and classes <section></section>
-    . I name the class "categoria width-fix mt-4" --> This means that will cointain the same width that has the  header board, and the same margin-top and padding.
-2. On the "section" tag, it starts the sctructure of the menu's category with a "div" tag. I named "item-categoria btn btn-white btn-sm mb-3 me-03"
-    . This means that this <div> can have 4 names inside and others configuration:
-        1. The item-categoria
-        2. btn
-        3  btn-white
-        4  btn-sm
-        config: margin-bottom: 3px; margin-external: 3px;
-
-    ====
-    Check the main.css file to see exactly how to style the menu's category.
-    =====
-
-3. Inside the <div> upon, I put the differents type of categories inside, they are very similar, only a few changes can transfor their icon, color and stufs. check inside the main.css file: 
-         ".item-categoria{}",
-         ".btn{}"
-         ".btn-white{}",
-         ".btn-sm{}"
-         ".btn-white:hover, btn-white.active{}"
