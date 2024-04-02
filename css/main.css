@@ -136,7 +136,7 @@ section.categoria {
 
 .item-categoria {
     flex: none;
-    
+
 }
 
 .btn-white {
@@ -144,20 +144,21 @@ section.categoria {
     background-color: var(--color-white);
     border-radius: 20px;
     padding: 15px 25px;
-    font-size: 20px ;
+    font-size: 20px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 
 .btn-sm {
-    padding: 8px 13px ;
-    border-radius: 15px ;
+    padding: 8px 13px;
+    border-radius: 15px;
     font-size: 16px;
 }
 
-.btn-white:hover, .btn-white.active {
+.btn-white:hover,
+.btn-white.active {
     background-color: var(--color-primary);
-    
+
 
 }
 
@@ -169,8 +170,10 @@ section.categoria {
 }
 
 .container-group .card {
-    padding: 15px; /* fazer isso para descolar o card do topo*/
-    cursor: pointer; /* Para transformar o cursor em maozinha*/
+    padding: 15px;
+    /* fazer isso para descolar o card do topo*/
+    cursor: pointer;
+    /* Para transformar o cursor em maozinha*/
 }
 
 /* .item-cardapio {
@@ -179,14 +182,24 @@ section.categoria {
 } */
 
 .container-img-produto {
-    width: 100px; /* Para definir a largura da imagem*/
-    height: 100px; /* Para definir a altura da imagem*/
-    background-repeat: no-repeat; /* para nao ficar um monte de quadradinhos*/
-    background-position: center; /* para centralizar a imagem */
-    background-color: var(--color-secondary); /* Se nao carregar a img, ter uma cor de fundo*/
-    border-radius: 15px;   /*  para arredondar as bordas*/
-    margin-right: 20px /* para descolar a img do texto*/;
-    flex: none /*Pra nao pegar nenhuma propriedade do flex*/;
+    width: 100px;
+    /* Para definir a largura da imagem*/
+    height: 100px;
+    /* Para definir a altura da imagem*/
+    background-repeat: no-repeat;
+    /* para nao ficar um monte de quadradinhos*/
+    background-position: center;
+    /* para centralizar a imagem */
+    background-color: var(--color-secondary);
+    /* Se nao carregar a img, ter uma cor de fundo*/
+    border-radius: 15px;
+    /*  para arredondar as bordas*/
+    margin-right: 20px
+        /* para descolar a img do texto*/
+    ;
+    flex: none
+        /*Pra nao pegar nenhuma propriedade do flex*/
+    ;
 }
 
 .infos-produto {
@@ -198,7 +211,8 @@ section.categoria {
 .infos-produto .name {
     font-size: 18px;
     color: var(--color-black);
-    margin-bottom: 0px; /*tags P ja tem margin bottom padrao*/
+    margin-bottom: 0px;
+    /*tags P ja tem margin bottom padrao*/
 }
 
 
@@ -213,4 +227,62 @@ section.categoria {
     font-size: 16px;
     color: var(--color-primary);
     margin-bottom: 0px;
+}
+
+
+
+
+.menu-bottom {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: space-between;
+}
+
+
+.card-bottom {
+    position: fixed;
+    ;
+    cursor: pointer;
+    /* border-radius: 20px; */
+    padding: 15px ;
+    font-size: 20px;
+    /*
+    
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+    border: none !important; */
+}
+
+
+.card-bottom .botao-sacola {
+    margin-left: 15px;
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    border-radius: 20px;
+    padding: 5px 10px;
+    
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-bottom .botao-cardapio {
+    margin-left: 15px;
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    border-radius: 20px;
+    padding: 5px 35px;
+    
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-bottom .quantidade-items {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+    position: relative;
+    top: -5px
 }
