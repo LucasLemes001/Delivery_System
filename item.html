@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+
+    <div class="bg-top details"></div>
+
+    <header class="width-fix mt-3">
+
+        <div class="card">
+            <div class="d-flex">
+                
+                <a href="./index.html" class="container-voltar">
+                    <i  class="fas fa-arrow-left"></i>
+                </a>
+                <div class="infos text-center">
+                    <h1 class="mb-0"><b>Detalhes do Produto</b></h1>
+                </div>
+
+                
+            </div>
+        </div>
+    </header>
+    
+    <section class="imagem width-fix mt-4">
+        <div class="container-img-produto-details"
+            style="background-image: url(./img/calabresa.jpg); background-size: cover;">
+        </div>
+
+        <div class="card mb-2">
+            
+            <div class="d-flex">
+                <div class="infos-produto">
+                    <p class="name mb-2"><b>Calabresa</b></p>
+                    <p class="desription mb-4">Molho de tomate, Queijo Muçarela, Cebola, Calabresa, Azeitona Preta e
+                        Oregano</p>
+                    <p class="price"><b>R$39</b></p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="opcionais width-fix mt-5 pb-5">
+            <div class="container-group mb-5">
+                <span class="bagde">Obrigatorio</span>
+
+                <p class="title-categoria mb-0"><b> Deseja Borda?</b></p>
+                <span class="sub-title-categoria">Escolha 1 opção</span>
+            </div>
+
+            <div class="card card-opcionais mt-2">
+                <div class=" infos-produtos-opcional">
+                    <p class=" name mb-0"><b>Catupiry</b></p>
+                    <p class="price mb-0"><b>+ R$ 6</b></p>
+
+                </div>
+                <div class="checks">
+                    <label for="" class="container-chekc">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+
+                    </label>
+
+                </div>
+            </div>
+
+            
+        </section>
+    
+        <section class="menu-bottom" id="menu-bottom">
+        
+        <a href="#" class="menu-bottom-item active">
+            <i class="fas fa-book-open" ></i>&nbsp; Cardápio
+        </a>
+
+        
+        <a href="#" class="menu-bottom-item">
+            <i class="fas fa-utensils" ></i>&nbsp; Pedido
+        </a>
+
+        <a href="#" class="menu-bottom-item">
+            <span class="badge-total-carrinho">0</span>
+            <!-- <i class="fas fa-shopping-cart" ></i> -->
+            Carrinho
+        </a>
+    </section>
+
+    <section class="menu-bottom disable hidden" id="menu-bottom-closed">
+        <p class="mb-0"><b>Ops! Estamos fechadoos no momento</b></p>
+    </section>
+
+    
+
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/cardapio.js"></script>
+</body>
+
+</html>

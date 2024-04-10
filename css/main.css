@@ -37,6 +37,10 @@ b {
     font-family: 'PoppinsMedium', 'Rubik', 'sans-serif';
 }
 
+.hidden {
+    display: none!important;
+}
+
 .bg-top {
     position: absolute;
     top: 0px;
@@ -282,4 +286,42 @@ section.categoria {
     position: relative;
     padding-top: 2px;
     margin-right: 2px;
+}
+
+.menu-bottom.disable {
+    justify-content: center;
+    padding: 15px;
+    font-size: 20px;
+    /* color: var(--color-text-out); */
+}
+
+                                    /*  DETAILS OF THE PRODUCT  */
+
+.bg-top.details {
+    height: 410px;
+
+}
+
+.container-voltar {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none!important;
+    font-size: 18px;
+    color: var(--color-black)!important;
+}
+
+.container-img-produto-details {
+    height: 300px;
+    width: 100%; /* This means 100% of the card*/
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* To position the img inside*/
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: var(--color-secondary);
+    margin-bottom: 20px;
+
 }
