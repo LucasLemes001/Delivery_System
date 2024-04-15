@@ -137,22 +137,27 @@
             <textarea class="form-control mt-2" rows="4"></textarea>
     </section>
 
-    <section class="menu-bottom" id="menu-bottom">
-
-        <a href="#" class="menu-bottom-item active">
-            <i class="fas fa-book-open"></i>&nbsp; Cardápio
+    <section class="menu-bottom details" id="menu-bottom">
+        <!-- Where will be the button to add things into the cart -->
+        <div class="add-carrinho">
+            <span class="btn-menos">
+                <i class="fas fa-minus"></i>
+            </span>
+            <span class="add-numero-itens">
+                2
+            </span>
+            <span class="btn-mais">
+                <i class="fas fa-plus"></i>
+            </span>
+        </div>
+        <a href="#" class="btn btn-yellow btn-sm" >
+            <!-- I did already put those information bellow,
+            Bc is more easy to maniupulate into the JS
+            when those information is inside the span-->
+            Adicionar<span>R$49,90</span>
         </a>
 
-
-        <a href="#" class="menu-bottom-item">
-            <i class="fas fa-utensils"></i>&nbsp; Pedido
-        </a>
-
-        <a href="#" class="menu-bottom-item">
-            <span class="badge-total-carrinho">0</span>
-            <!-- <i class="fas fa-shopping-cart" ></i> -->
-            Carrinho
-        </a>
+        
     </section>
 
     <section class="menu-bottom disable hidden" id="menu-bottom-closed">
@@ -162,7 +167,7 @@
 
 
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/cardapio.js"></script>
+    <script type="text/javascript" src="./js/item.js"></script>
 </body>
 
 </html>
