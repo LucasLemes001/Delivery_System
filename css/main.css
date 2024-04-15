@@ -140,7 +140,7 @@ section.categoria {
 .container-menu::-webkit-scrollbar {
     width: 0;
     height: 0;
-  }
+}
 
 
 .item-categoria {
@@ -314,7 +314,7 @@ section.categoria {
 }
 
 .container-img-produto-details {
-    height: 300px;
+    height: 210px;
     width: 100%; /* This means 100% of the card*/
     background-position: center;
     background-repeat: no-repeat;
@@ -323,5 +323,115 @@ section.categoria {
     margin: 0 auto;
     background-color: var(--color-secondary);
     margin-bottom: 20px;
+}
 
+.sub-title-categoria {
+    color: var(--color-text);
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.card-opcionais {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.infos-produtos-opcional {
+    flex: 1; /* To recive all the context in the line*/
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.infos-produtos-opcional .name, .infos-produtos-opcional .price {
+    counter-reset: var(--color-black);
+}
+
+.opcionais .badge {
+    float: right;
+    background-color: var(--color-secondary);
+    padding: 5px;
+    color: var(--color-black);
+    font-size: 14px;
+}
+
+.checks {
+    margin-left: 10px;
+
+}
+
+.container-check {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer; /*Curson with a hand*/
+    font-size: 22px;
+    user-select: none; /*Not me marked around when click*/
+    -webkit-user-select: none; /*To android browser*/
+    -moz-user-select: none; /*To a mozila browser*/
+}
+
+.container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    background-color: var(--color-input-out);
+}
+
+.container-check:hover input~.checkmark {
+    background-color: var(--color-text-out);
+}
+
+.container-check input:checked~.checkmark {
+    background-color: var(--color-primary);
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-check input:checked~.checkmark::after {
+    display: block;
+}
+
+.container-check .checkmark::after {
+    left: 9px;
+    top: 7px;
+    width: 6px;
+    height: 10px;
+    border: solid var(--color-white);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45dg);
+    -ms-transform: rotate(45deg);
+    border-width: 0 3px 3px 0;
+}   
+
+.form-control {
+    background-color: var(--color-white);
+    color: var(--color-background) !important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 16px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1)!important;
+    border: none !important;
+    height: 50px;
+}
+
+.textarea {
+    height: 150px!important;
 }
