@@ -12,7 +12,7 @@
     --color-background: #fffdf7;
     --color-black: #212121;
     --color-text: #4f4f4f;
-    --color-text-out: #90908e;
+    --color-text-out: #908f8e;
     --color-primary: #ffbf00;
     --color-primary-out: #ffda6f;
     --color-secondary: #fff2cc;
@@ -38,7 +38,7 @@ b {
 }
 
 .hidden {
-    display: none!important;
+    display: none !important;
 }
 
 .bg-top {
@@ -51,6 +51,7 @@ b {
 }
 
 .width-fix {
+    /* This is used to centralize all class that uses this*/
     width: calc(100% - 20px);
     margin: 0px auto;
 
@@ -112,8 +113,6 @@ b {
     text-decoration: none;
     font-size: 14px;
     color: var(--color-primary) !important;
-
-
 }
 
 section.categoria {
@@ -158,8 +157,8 @@ section.categoria {
 }
 
 .btn-yellow {
-    border: none!important;
-    color: var(--color-black)!important;
+    border: none !important;
+    color: var(--color-black) !important;
     border-radius: 25px;
     padding: 15px 25px;
     background-color: var(--color-primary);
@@ -248,7 +247,8 @@ section.categoria {
 
 
 .menu-bottom {
-    position: fixed; /* When roll the screen, keep in the same spot*/
+    position: fixed;
+    /* When roll the screen, keep in the same spot*/
     right: 0;
     left: 0;
     bottom: 10px;
@@ -286,7 +286,7 @@ section.categoria {
 .badge-total-carrinho {
     width: 21px;
     height: 21px;
-    background-color:  var(--color-primary);
+    background-color: var(--color-primary);
     border-radius: 50px;
     font-size: 12px;
     font-weight: bold;
@@ -303,7 +303,7 @@ section.categoria {
     /* color: var(--color-text-out); */
 }
 
-                                    /*  DETAILS OF THE PRODUCT  */
+/*  DETAILS OF THE PRODUCT  */
 
 .bg-top.details {
     height: 410px;
@@ -316,17 +316,19 @@ section.categoria {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none!important;
+    text-decoration: none !important;
     font-size: 18px;
-    color: var(--color-black)!important;
+    color: var(--color-black) !important;
 }
 
 .container-img-produto-details {
     height: 210px;
-    width: 100%; /* This means 100% of the card*/
+    width: 100%;
+    /* This means 100% of the card*/
     background-position: center;
     background-repeat: no-repeat;
-    position: relative; /* To position the img inside*/
+    position: relative;
+    /* To position the img inside*/
     border-radius: 20px;
     margin: 0 auto;
     background-color: var(--color-secondary);
@@ -346,13 +348,15 @@ section.categoria {
 }
 
 .infos-produtos-opcional {
-    flex: 1; /* To recive all the context in the line*/
+    flex: 1;
+    /* To recive all the context in the line*/
     display: flex;
     justify-content: space-between;
     font-size: 14px;
 }
 
-.infos-produtos-opcional .name, .infos-produtos-opcional .price {
+.infos-produtos-opcional .name,
+.infos-produtos-opcional .price {
     counter-reset: var(--color-black);
 }
 
@@ -374,11 +378,15 @@ section.categoria {
     position: relative;
     padding-left: 25px;
     margin-bottom: 12px;
-    cursor: pointer; /*Curson with a hand*/
+    cursor: pointer;
+    /*Curson with a hand*/
     font-size: 22px;
-    user-select: none; /*Not me marked around when click*/
-    -webkit-user-select: none; /*To android browser*/
-    -moz-user-select: none; /*To a mozila browser*/
+    user-select: none;
+    /*Not me marked around when click*/
+    -webkit-user-select: none;
+    /*To android browser*/
+    -moz-user-select: none;
+    /*To a mozila browser*/
 }
 
 .container-check input {
@@ -427,21 +435,21 @@ section.categoria {
     -webkit-transform: rotate(45dg);
     -ms-transform: rotate(45deg);
     border-width: 0 3px 3px 0;
-}   
+}
 
 .form-control {
     background-color: var(--color-white);
-    color: var(--color-background) !important;
+    color: var(--color-black) !important;
     border-radius: 20px;
     padding: 15px 25px;
     font-size: 16px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1)!important;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
     border: none !important;
-    height: 50px;
+    height: 100px;
 }
 
 .textarea {
-    height: 150px!important;
+    height: 150px !important;
 }
 
 .menu-bottom.details {
@@ -458,7 +466,8 @@ section.categoria {
     align-items: center;
 }
 
-.btn-menos , .btn-mais {
+.btn-menos,
+.btn-mais {
     color: var(--color-black);
     padding: 8px 12px;
     border-radius: 10px;
@@ -472,5 +481,25 @@ section.categoria {
     padding: 2px 15px;
     border-radius: 10px;
     font-size: 18px;
+}
+
+
+.infos-sobre {
+    color: var(--color-black);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-img-sobre {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-image: url('../img/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 300px;
 }
 
