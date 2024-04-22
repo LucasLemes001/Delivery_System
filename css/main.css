@@ -303,7 +303,27 @@ section.categoria {
     /* color: var(--color-text-out); */
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /*  DETAILS OF THE PRODUCT  */
+
+
+
+
+
+
+
+
+
 
 .bg-top.details {
     height: 410px;
@@ -486,20 +506,21 @@ section.categoria {
 
 .infos-sobre {
     color: var(--color-black);
-    font-size: 16px;
     display: flex;
+    font-size: 16px;
     flex-direction: column;
     justify-content: center;
 }
 
-.container-img-sobre {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    background-image: url('../img/logo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 300px;
+/* Defining "Sobre a Pizzaria"*/
+
+.bg-top.sobre {
+    height: 200px;
 }
 
+.title-sobre {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-right: 100px;
+    
+}
