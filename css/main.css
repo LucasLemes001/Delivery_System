@@ -546,7 +546,7 @@ section.categoria {
 
 }
 
-.container-group-sobre {
+/* .container-group-sobre {
     font-size: 18px;
 	display: flex;
 	flex-direction: row;
@@ -560,4 +560,10 @@ section.categoria {
     font-size: 18px;
     color: var(--color-black);
     margin: 0;
+} */
+
+.normal-text {
+    font-size: 14px;
+    color: var(--color-text);
 }
+
