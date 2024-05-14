@@ -381,7 +381,7 @@ section.categoria {
 
 .infos-produtos-opcional .name,
 .infos-produtos-opcional .price {
-    counter-reset: var(--color-black);
+    color: var(--color-black);
 }
 
 .opcionais .badge {
