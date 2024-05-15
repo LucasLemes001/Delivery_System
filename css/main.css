@@ -668,3 +668,51 @@ justify-content: center;}
     border: none !important;
 }
 
+.card-select {
+    cursor: pointer;
+    border: 2px dashed var(--color-primary)!important;
+    border-radius: 20px;
+    padding: 15x 20px;
+    
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+.card-address {
+    cursor: pointer;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-icon-details {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+    font-size: 22px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.card-address .infos {
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+
+}
+
+.card-address .infos .name {
+    color: var(--color-black);   
+}
+
+.icon-edit {
+    font-size: 16px;
+    color:var(--color-primary);
+}
+
