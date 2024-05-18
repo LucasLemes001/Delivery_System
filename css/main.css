@@ -769,3 +769,8 @@ justify-content: center;}
     font-size: 18px;
     color: var(--color-primary);
 }
+
+.pedidos-active{
+    background-color: var(--color-primary-out);
+}
+
