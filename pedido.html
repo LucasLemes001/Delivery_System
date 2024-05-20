@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <section class="pedido width-fix mt-4">
+    <section class="pedido width-fix mt-4 hidden">
 
         <div class="card card-status-pedido">
             <div class="img-icon-details">
@@ -63,43 +63,75 @@
                 <i class="fab fa-whatsapp"></i>
                 <p class="mb-0 mt-1">Mensagem</p>
             </div>
+
             <div class=" detalhes-produto-acoes">
                 <i class="far fa-file-alt"></i>
                 <p class="mb-0 mt-1">Ver pedido</p>
             </div>
+
         </div>
 
-    </section>
+        <div class="card card-status-pedido mt-2 cencelado hidden">
+            <div class="img-icon-details">
+                <i class="fas fa-times"></i>
+            </div>
 
-    <section class="pedido width-fix mt-4">
-        <div class="card card-status-pedido pedidos-active">
+            <div class="infos ">
+                <p class="name mb-1"><b>Pedido Cancelado!</b></p>
+                <span class="text mb-0"> O restaurante cancelou seu pedido. Entre em contato para mais informações</span>
+            </div>
+
+        </div>
+        <div class="card card-status-pedido mt-4 active">
             <div class="img-icon-details">
                 <i class="fas fa-clock"></i>
             </div>
+
             <div class="infos ">
                 <p class="name mb-1"><b>Pedido enviado!</b></p>
                 <span class="text mb-0"> Aguardando a confirmação da loja.</span>
             </div>
+
         </div>
-        <div class="card card-status-pedido mt-3 ">
+
+        <div class="card card-status-pedido mt-3 pending ">
             <div class="img-icon-details">
                 <i class="fas fa-utensils"></i>
             </div>
+
             <div class="infos ">
                 <p class="name mb-1"><b>Preparando</b></p>
                 <span class="text mb-0"> Preparando seu pedido.</span>
             </div>
+
         </div>
-        <div class="card card-status-pedido mt-3 ">
+
+        <div class="card card-status-pedido  mt-3 pending ">
             <div class="img-icon-details">
                 <i class="fas fa-motorcycle"></i>
             </div>
+
             <div class="infos ">
                 <p class="name mb-1"><b>Indo até você</b></p>
                 <span class="text mb-0"> Seu pedido está a caminho, fique atento!</span>
             </div>
+
         </div>
+        <div class="card card-status-pedido mt-3 pending">
+            <div class="img-icon-details">
+                <i class="fas fa-box"></i>
+            </div>
+
+            <div class="infos ">
+                <p class="name mb-1"><b>Pronto para retirada.</b></p>
+                <span class="text mb-0"> Tudo pronto! Venha retirar antes que esfrie!</span>
+            </div>
+
+        </div>
+
     </section>
+
+
     <section class="menu-bottom" id="menu-bottom">
 
         <a href="./index.html" class="menu-bottom-item">

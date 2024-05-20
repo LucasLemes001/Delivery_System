@@ -770,7 +770,23 @@ justify-content: center;}
     color: var(--color-primary);
 }
 
-.pedidos-active{
-    background-color: var(--color-primary-out);
+.card-status-pedido.active {
+    background-color: var(--color-green);
 }
 
+.card-status-pedido.pending {
+    background-color: var(--color-separate);
+    opacity: 0.5;
+}
+
+.card-status-pedido.pending .img-icon-details {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 8px;   
+}
+
+.card-status-pedido.cencelado .img-icon-details{
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
