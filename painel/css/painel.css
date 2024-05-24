@@ -150,5 +150,33 @@ h1.title-page {
     color: var(--color-text-out);
 }
 
+.conteudo-inner {
+    margin-top: 50px;
+}
+/*  Tela  Pedidos*/
+
+.menus-pedidos i {
+    margin-right: 5px;
+}
+
+.menus-pedidos a {
+    opacity: 0.5;
+    margin-right: 10px;
+}
+
+.menus-pedidos a.active, .menus-pedidos a:hover {
+    opacity: 1;
+}
+.badge-total-pedidos {
+    display: inline-block;
+    background-color: var(--color-primary-out);
+    border-radius: 50px;
+    font-size: 14px;
+    width: 25px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+
 
 
