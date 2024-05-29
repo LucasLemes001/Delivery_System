@@ -134,7 +134,7 @@
                                             <p class="numero-pedido mt-2">#1</p>    
                                         </div>
 
-                                        <div class="card-content">
+                                        <div class="card-content" data-bs-toggle="modal" data-bs-target="#modalDetalhes">
                                             <div class="card-pedido-body mt-3">
                                                 <p class="info-pedido">
                                                     <i class="fas fa-user"></i> João da Silva
@@ -175,7 +175,7 @@
                                             <p class="numero-pedido mt-2">#1</p>    
                                         </div>
 
-                                        <div class="card-content">
+                                        <div class="card-content" data-bs-toggle="modal" data-bs-target="#modalDetalhes">
                                             <div class="card-pedido-body mt-3">
                                                 <p class="info-pedido">
                                                     <i class="fas fa-user"></i> Maria Joaquina dos Santos
@@ -185,7 +185,7 @@
                                                 </p>
                                                 <p class="info-pedido">
                                                     <i class="fas fa-coins"></i> Débito
-                                                    <span> Levar maquinha de cartão </span>
+                                                    <span> Levar maquininha </span>
                                                 </p>
 
                                             </div>
@@ -211,6 +211,76 @@
         </div>
     </section>
 
+    <div id="modalDetalhes" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">#1 <span class="horario-pedido"> Recebido em 10:30</span></h5>
+                    <button class="btn btn-white btn-sm" type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>&nbsp; Fechar
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-dados-pedido pt-1">
+                        <div class="row">
+
+                            <div class="col-12">
+                                <div class="card card-address cursor-default">
+                                    <div class="img-icon-details">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="infos pr-0">
+                                        <div class="d-flex">
+                                            <p class="name mb-0"><b>Maria Joaquina</b></p>
+                                            <span class="text mb-0"> (99)99999-9999</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="info-pedido mb-0">
+                                                Recebido em 21/10/ as 10:30
+                                            </span>
+                                            <span class="info-pedido link mb-0">
+                                                <i class="fas fa-motorcycle"></i>&nbsp; Entrega
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="card card-address cursor-default">
+                                    <div class="img-icon-details">
+                                        <i class="fas fa-credit-card"></i>
+                                    </div>
+                                    <div class="infos pr-0">
+                                        <p class="name mb-0"><b>Cartão de Débito</b></p>
+                                        <span class="text mb-0"> Levar Maquinha de Cartão</span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="card card-address">
+                                    <div class="img-icon-details">
+                                        <i class="fas fa-map-marked"></i>
+                                    </div>
+                                    <div class="infos pr-0">
+                                        <p class="name mb-0"><b>Rua das Margaridas, 999, Botafogo</b></p>
+                                        <span class="text mb-0"> Cidade-Rj /CEP: 45306-395</span>
+                                    </div>
+                                    <div class="icon-edit">
+                                        <i class="fas fa-location-arrow"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/cardapio.js"></script>
