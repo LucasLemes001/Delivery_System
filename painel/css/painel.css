@@ -138,7 +138,7 @@ h1.title-page {
 
 .container-dados p {
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 18px;
     text-align: right;
     color: var(--color-black);
     line-height: 15px;
@@ -149,6 +149,10 @@ h1.title-page {
     text-align: right;
     color: var(--color-text-out);
 }
+.container-right .container-dados {
+    margin-right: 15px;
+}
+
 
 .conteudo-inner {
     margin-top: 50px;
@@ -330,3 +334,85 @@ Pendenter/Entregue ETC ETC*/
     font-size: 14px;
 }
 
+/* Modal Details Pedidos*/
+
+.container-itens-pedido {
+    padding: 20px;
+    background-color: var(--color-white);
+}
+
+.container-itens-pedido .card-item {
+    padding: 5px 0px 10px 0px;
+    border-bottom: 1px dashed #cdcdcd;
+}
+
+.container-itens-pedido::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    margin-top: 17px;
+    background: radial-gradient(circle, transparent, transparent 50%, #ffffff 50%, #ffffff 100%) -15px 2px / 16px 16px repeat-x;
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: end;
+}
+
+
+/* CARDÁPIO.HTML */
+
+.card-drag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.drag-icon {
+    display: flex;
+    width: 25px;
+    height: 35px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+}
+
+.card-drag .infos {
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+
+}
+
+.card-drag .infos .name {
+    color: var(--color-black)!important;
+    text-decoration: none!important;
+
+}
+
+.actions {
+    display: flex;
+
+}
+
+.icon-action {
+    margin-left: 10px;
+    color: var(--color-black)!important;
+    text-decoration: none!important;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: var(--box-shadow);
+}
