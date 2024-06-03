@@ -416,3 +416,52 @@ Pendenter/Entregue ETC ETC*/
     transition: all 0.3s;
     box-shadow: var(--box-shadow);
 }
+
+.icon-action:hover {
+    background-color: var(--color-secondary);
+}
+
+/*  CARDAPIO Painel Produto*/
+
+
+.title-produtos {
+    font-size: 14px;
+    color: var(--color-black);
+}
+
+.drag-icon-produto {
+    /* transforming the icon of "drag" into a "domino" format*/
+    display: flex;
+    width: 35px;
+    font-size: 16px;
+    cursor: grab;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-produtos .container-img-produto {
+    /*Putting the icon "edit" on the bottom and right of the page*/
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.lista-produtos .infos-produto {
+    flex: 1;
+}
+
+.badge-adicionais {
+    /*Modifying the badge of "adicionais*/
+    position: absolute;
+    top: 6px;
+    margin-left: 19px;
+    font-size: 12px;
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
