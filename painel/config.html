@@ -86,12 +86,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="menus-config">
-                                <a href="#" class="btn btn-sm btn-white active">
+                                <a href="#" class="btn btn-sm btn-white ">
                                     <i class="fas fa-shopping-bag"></i> Delivery e Retirada
                                     
                                 </a>
                                 
-                                <a href="#" class="btn btn-sm btn-white ">
+                                <a href="#" class="btn btn-sm btn-white active">
                                     <i class="fa fa-motorcycle"></i> Taxa de Entrega
                                     
                                 </a>
@@ -104,7 +104,7 @@
                         </div>
                         
 
-                            <div class="col-12 mt-5" id="delivery-retirada">
+                            <div class="col-12 mt-5 hidden" id="delivery-retirada">
                                 <p class="title-categoria mb-0">
                                     <b> Selecione as Opções de Delivery e Retirada da sua Loja</b>
                                 </p>
@@ -158,8 +158,80 @@
                                             </label>
                                         </div>
                                 </div>
+                                </div>
                             </div>
-                            <div class="col-12 mt-5 hidden" id="taxa-entrega">
+
+
+                            <div class="col-12 mt-5" id="taxa-entrega">
+                                <p class="title-categoria mb=0">
+                                    <b>
+                                        Selecione as Opções de Taxa de Entrega da Sua Loja
+                                    </b>
+                                </p>
+                                <div class="container-group inline mb-3">
+                                    <div class="card mt-3 ">
+                                        <div class="group-select">
+                                            <div class="checks">
+                                                <label for="" class="container-check">
+                                                    <input type="checkbox" checked/>
+                                                    <span class="checkmark"></span>
+                                                    Sem Taxa de Entrega
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mt-3 ">
+                                        <div class="group-select">
+                                            <div class="checks">
+                                                <label for="" class="container-check">
+                                                    <input type="checkbox" />
+                                                    <span class="checkmark"></span>
+                                                    Taxa Única
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mt-3 ">
+                                        <div class="group-select">
+                                            <div class="checks">
+                                                <label for="" class="container-check">
+                                                    <input type="checkbox" />
+                                                    <span class="checkmark"></span>
+                                                    Taxa Por Distância
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                
+                                <!-- Down here we're going to create the "Taxa de Entrega"
+                                Or what will be showwed inside the menus -->
+                                
+                                <div class="container-group mb-3" id="container-sem-taxa">
+                                    <div class="card card-address cursor-default mt-4">
+                                        <div class="infos">
+                                            <p class="name mb-0	">
+                                                <b>
+                                                    Nenhuma Taxa será cobrada na Entrega
+                                                </b>
+
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="container-group mb-3 hidden" id="container-taxa-unica">
+
+                                </div>
+
+                                <div class="container-group mb-3 hidden" id="container-taxa-distancia">
+
+                                </div>
 
                             </div>
                             <div class="col-12 mt-5 hidden" id="formas-pagemento">
@@ -170,7 +242,7 @@
                         
                         
 
-                    </div>
+                    
                 </div>
             </div>
                 
