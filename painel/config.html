@@ -19,7 +19,7 @@
         <div class="menu-left">
 
             <div class="logo">
-                <img src="../img/logo.png" width="100" style="border-radius: 25px;"/>
+                <img src="../img/logo.png" width="100" style="border-radius: 25px;" />
             </div>
 
             <div class="menus">
@@ -64,7 +64,7 @@
                             </h1>
 
                             <div class="container-right">
-                            
+
                                 <div class="container-dados">
                                     <p>Pizzaria Central</p>
                                     <span>PizzariaCentral@contato.com</span>
@@ -75,7 +75,7 @@
                                 </a>
 
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -88,167 +88,320 @@
                             <div class="menus-config">
                                 <a href="#" class="btn btn-sm btn-white ">
                                     <i class="fas fa-shopping-bag"></i> Delivery e Retirada
-                                    
+
                                 </a>
-                                
+
                                 <a href="#" class="btn btn-sm btn-white active">
                                     <i class="fa fa-motorcycle"></i> Taxa de Entrega
-                                    
+
                                 </a>
-                                
+
                                 <a href="#" class="btn btn-sm btn-white ">
                                     <i class="fa fa-coins"></i> Formas de Pagamento
-                                    
+
                                 </a>
                             </div>
                         </div>
-                        
 
-                            <div class="col-12 mt-5 hidden" id="delivery-retirada">
-                                <p class="title-categoria mb-0">
-                                    <b> Selecione as Opções de Delivery e Retirada da sua Loja</b>
-                                </p>
-                                <div class="container-group mb-3">
-                                    <div class="card card-address cursor-default mt-3">
-                                        <div class="img-icon-details">
-                                            <i class="fas fa-box"></i>
-                                        </div>
-                                        <div class="infos config">
-                                            <p class="name mb-1">
-                                                <b>Retirada</b>
-                                            </p>
-                                            <label class="switch">
-                                                <input type="checkbox"/>
-                                                <span class="slider round"></span>
-                                                <span class="text mb-0">Desligado</span>
-                                            </label>
-                                        </div>
-                                            
-                                        <div class="tempo disabled">
-                                            <div class="form-group">
-                                                <label  class=""><b>Tempo min. para retirada</b></label>
-                                                <input type="number" class="form-control" placeholder="20" name="" id="" disabled>
-                                            </div>
-                                            <div class="form-group">
-                                                <label  class=""><b>Tempo max. para retirada</b></label>
-                                                <input type="number" class="form-control" placeholder="50" name="" id="" disabled>
-                                            </div>
-                                        </div>
-                                        <div class="btn btn-yellow btn-sm ms-4 disabled" >
-                                            <i class="fas fa-check"></i>&nbsp; Salvar
-                                        </div>
+
+                        <div class="col-12 mt-5 hidden " id="delivery-retirada">
+                            <p class="title-categoria mb-0">
+                                <b> Selecione as Opções de Delivery e Retirada da sua Loja</b>
+                            </p>
+                            <div class="container-group mb-3">
+                                <div class="card card-address cursor-default mt-3">
+                                    <div class="img-icon-details">
+                                        <i class="fas fa-box"></i>
+                                    </div>
+                                    <div class="infos config">
+                                        <p class="name mb-1">
+                                            <b>Retirada</b>
+                                        </p>
+                                        <label class="switch">
+                                            <input type="checkbox" />
+                                            <span class="slider round"></span>
+                                            <span class="text mb-0">Desligado</span>
+                                        </label>
                                     </div>
 
+                                    <div class="tempo disabled">
+                                        <div class="form-group">
+                                            <label class=""><b>Tempo min. para retirada</b></label>
+                                            <input type="number" class="form-control" placeholder="20" 
+                                                disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class=""><b>Tempo max. para retirada</b></label>
+                                            <input type="number" class="form-control" placeholder="50"
+                                                disabled>
+                                        </div>
+                                    </div>
+                                    <div class="btn btn-yellow btn-sm ms-4 disabled">
+                                        <i class="fas fa-check"></i>&nbsp; Salvar
+                                    </div>
                                 </div>
 
-                                
-                                <div class="container-group mb-3">
-                                    <div class="card card-address cursor-default mt-3">
-                                        <div class="img-icon-details">
-                                            <i class="fas fa-motorcycle"></i>
-                                        </div>
-                                        <div class="infos config">
-                                            <p class="name mb-1">
-                                                <b>Delivery</b>
-                                            </p>
-                                            <label class="switch">
-                                                <input type="checkbox" checked/>
-                                                <span class="slider round"></span>
-                                                <span class="text mb-0">Ligado</span>
-                                            </label>
-                                        </div>
-                                </div>
-                                </div>
                             </div>
 
 
-                            <div class="col-12 mt-5" id="taxa-entrega">
-                                <p class="title-categoria mb=0">
+                            <div class="container-group mb-3">
+                                <div class="card card-address cursor-default mt-3">
+                                    <div class="img-icon-details">
+                                        <i class="fas fa-motorcycle"></i>
+                                    </div>
+                                    <div class="infos config">
+                                        <p class="name mb-1">
+                                            <b>Delivery</b>
+                                        </p>
+                                        <label class="switch">
+                                            <input type="checkbox" checked />
+                                            <span class="slider round"></span>
+                                            <span class="text mb-0">Ligado</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 mt-5" id="taxa-entrega">
+                            <p class="title-categoria mb=0">
+                                <b>
+                                    Selecione as Opções de Taxa de Entrega da Sua Loja
+                                </b>
+                            </p>
+
+                            
+                            <div class="container-group inline mb-3">
+                            
+                                <div class="card mt-3 ">
+                                    <div class="group-select">
+                                        <div class="checks">
+                                            <label class="container-check">
+                                                <input type="checkbox"/>
+                                                <span class="checkmark"></span>
+                                                Sem Taxa de Entrega
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mt-3 ">
+                                    <div class="group-select">
+                                        <div class="checks">
+                                            <label  class="container-check">
+                                                <input type="checkbox"/>
+                                                <span class="checkmark"></span>
+                                                Taxa Única
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mt-3 ">
+                                    <div class="group-select">
+                                        <div class="checks">
+                                            <label class="container-check">
+                                                <input type="checkbox"/>
+                                                <span class="checkmark"></span>
+                                                Taxa Por Distância
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <!-- Down here we're going to create the "Taxa de Entrega"
+                                Or what will be showwed inside the menus -->
+
+                            <div class="container-group mb-3 hidden" id="container-sem-taxa">
+                                <div class="card card-address cursor-default mt-4">
+                                    <div class="infos">
+                                        <p class="name mb-0	">
+                                            <b>
+                                                Nenhuma Taxa será cobrada na Entrega
+                                            </b>
+
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="container-group mb-3 hidden" id="container-taxa-unica">
+                                <div class="card card-address cursor-default mt-4 pb-4 ps-4 justify-content-start">
+                                    <div class="tempo">
+                                        
+                                        <div class="form-group form-sm">
+                                            <label ><b>Taxa (R$)</b></label>
+                                            <input type="text" class="form-control" placeholder="R$20,00"/>
+                                        </div>
+                                        
+                                        <div class="form-group me-3">
+                                            <label ><b>Tempo Min. p/ Entrega </b></label>
+                                            <input type="text" class="form-control" placeholder="20min"/>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label ><b>Tempo Max. p/ Entrega</b></label>
+                                            <input type="text" class="form-control" placeholder="50min"/>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-yellow btn-sm ms-4">
+                                        <i class="fas fa-check"></i>&nbsp; Salvar Alteração
+                                    </a>
+                            </div>
+                                    
+                            </div>
+
+                            
+                            <div class="container-group mb-3" id="container-taxa-distancia">
+                                <div class="card card-address cursor-default mt-4 pb-4 ps-4 justify-content-start">
+                                    <div class="tempo">
+                                        
+                                        <div class="form-group form-sm">
+                                            <label ><b>Distância(Km)</b></label>
+                                            <input type="text" class="form-control" placeholder="5"/>
+                                        </div>
+                                        <div class="form-group form-sm">
+                                            <label ><b>Taxa (R$)</b></label>
+                                            <input type="text" class="form-control" placeholder="R$20,00"/>
+                                        </div>
+                                        
+                                        <div class="form-group me-3">
+                                            <label ><b>Tempo Min. p/ Entrega </b></label>
+                                            <input type="text" class="form-control" placeholder="20min"/>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label ><b>Tempo Max. p/ Entrega</b></label>
+                                            <input type="text" class="form-control" placeholder="50min"/>
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-yellow btn-sm ms-4">
+                                        <i class="fas fa-plus"></i>&nbsp; Adicionar
+                                    </a>
+                                </div>
+                                <p class="title-categoria mb-0  mt-5">
                                     <b>
-                                        Selecione as Opções de Taxa de Entrega da Sua Loja
+                                        Lista das Taxas cadastradas:
                                     </b>
                                 </p>
-                                <div class="container-group inline mb-3">
-                                    <div class="card mt-3 ">
-                                        <div class="group-select">
-                                            <div class="checks">
-                                                <label for="" class="container-check">
-                                                    <input type="checkbox" checked/>
-                                                    <span class="checkmark"></span>
-                                                    Sem Taxa de Entrega
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="card mt-3">
+                                    <table class="table table-hover">
+                                        
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <b>Distância(Km)</b>
+                                                </th>
+                                                <th>
+                                                    <b>Taxa(R$)</b>
+                                                </th>
+                                                <th>
+                                                    <b>Tempo de entrega(min.)</b>
+                                                </th>
+                                                <th>
+                                                    <b>Status</b>
+                                                </th>
+                                                <th>
+                                                    <b>Ações</b>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Até 5km
+                                                </td>
+                                                <td>
+                                                    R$15
+                                                </td>
+                                                <td>
+                                                    25min. à 30min.
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-success">
+                                                        Ativado
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-sm btn-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a href="#" class="dropdown-item">
+                                                                <i class="fas fa-check"></i>&nbsp; <b>Ativar</b>
+                                                            </a>
+                                                            <a href="#" class="dropdown-item">
+                                                                <i class="fas fa-trash-alt color-red"></i>&nbsp; <b>Remover</b>
+                                                            </a>
 
-                                    <div class="card mt-3 ">
-                                        <div class="group-select">
-                                            <div class="checks">
-                                                <label for="" class="container-check">
-                                                    <input type="checkbox" />
-                                                    <span class="checkmark"></span>
-                                                    Taxa Única
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Até 10km
+                                                </td>
+                                                <td>
+                                                    R$25
+                                                </td>
+                                                <td>
+                                                    25min. à 40min.
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-danger">
+                                                        Desativado
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-sm btn-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a href="#" class="dropdown-item">
+                                                                <i class="fas fa-check"></i>&nbsp; <b>Ativar</b>
+                                                            </a>
+                                                            <a href="#" class="dropdown-item">
+                                                                <i class="fas fa-trash-alt color-red"></i>&nbsp; <b>Remover</b>
+                                                            </a>
 
-                                    <div class="card mt-3 ">
-                                        <div class="group-select">
-                                            <div class="checks">
-                                                <label for="" class="container-check">
-                                                    <input type="checkbox" />
-                                                    <span class="checkmark"></span>
-                                                    Taxa Por Distância
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        
+                                    </table>
 
                                 </div>
-                                
-                                <!-- Down here we're going to create the "Taxa de Entrega"
-                                Or what will be showwed inside the menus -->
-                                
-                                <div class="container-group mb-3" id="container-sem-taxa">
-                                    <div class="card card-address cursor-default mt-4">
-                                        <div class="infos">
-                                            <p class="name mb-0	">
-                                                <b>
-                                                    Nenhuma Taxa será cobrada na Entrega
-                                                </b>
-
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="container-group mb-3 hidden" id="container-taxa-unica">
-
-                                </div>
-
-                                <div class="container-group mb-3 hidden" id="container-taxa-distancia">
-
-                                </div>
-
+                                    
                             </div>
-                            <div class="col-12 mt-5 hidden" id="formas-pagemento">
+                            
+                        </div>
+                        </div>
+                        <div class="col-12 mt-5 hidden" id="formas-pagemento">
 
-                            </div>
+                        </div>
 
-                        
-                        
-                        
 
-                    
+
+
+
+
+                    </div>
                 </div>
+
+
+
             </div>
-                
-
-
-        </div>
     </section>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/cardapio.js"></script>

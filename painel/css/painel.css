@@ -128,7 +128,7 @@ h1.title-page {
     flex: 1;
     color: var(--color-black);
     font-size: 20px;
-    
+
 }
 
 .container-right {
@@ -144,11 +144,13 @@ h1.title-page {
     line-height: 15px;
     margin-right: 30px;
 }
+
 .container-dados span {
     font-size: 13px;
     text-align: right;
     color: var(--color-text-out);
 }
+
 .container-right .container-dados {
     margin-right: 15px;
 }
@@ -157,6 +159,7 @@ h1.title-page {
 .conteudo-inner {
     margin-top: 50px;
 }
+
 /*  Tela  Pedidos*/
 
 .menus-pedidos i {
@@ -168,7 +171,8 @@ h1.title-page {
     margin-right: 10px;
 }
 
-.menus-pedidos a.active, .menus-pedidos a:hover {
+.menus-pedidos a.active,
+.menus-pedidos a:hover {
     opacity: 1;
 }
 
@@ -201,6 +205,7 @@ Pendenter/Entregue ETC ETC*/
     margin-bottom: 10px;
     color: var(--color-black);
 }
+
 .info-pedido i {
     width: 25px;
     text-align: center;
@@ -233,7 +238,7 @@ Pendenter/Entregue ETC ETC*/
 }
 
 .card-pedido {
-    box-shadow: 1px 0px 15px 3px rgba(0,0,0,0.1)!important;
+    box-shadow: 1px 0px 15px 3px rgba(0, 0, 0, 0.1) !important;
     border-radius: 0px;
 }
 
@@ -246,6 +251,7 @@ Pendenter/Entregue ETC ETC*/
     top: -7px;
     background: radial-gradient(circle, transparent, transparent 50%, #ffffff 50%, #ffffff 100%) -7px -8px / 16px 16px repeat-x;
 }
+
 .card-pedido::after {
     content: "";
     position: absolute;
@@ -261,7 +267,8 @@ Pendenter/Entregue ETC ETC*/
 
 }
 
-.card-pedido:hover::before , .card-pedido:hover::after {
+.card-pedido:hover::before,
+.card-pedido:hover::after {
     background-image: radial-gradient(circle, transparent, transparent 50%, var(--color-secondary) 50%, var(--color-secondary) 100%) -7px -8px / 16px 16px repeat-x;
 }
 
@@ -269,6 +276,7 @@ Pendenter/Entregue ETC ETC*/
     cursor: pointer;
 
 }
+
 .card-pedido-body {
     height: 140px;
 }
@@ -326,7 +334,7 @@ Pendenter/Entregue ETC ETC*/
 }
 
 .cursor-default {
-    cursor: default!important;
+    cursor: default !important;
 }
 
 .container-dados-pedido .info-pedido {
@@ -390,8 +398,8 @@ Pendenter/Entregue ETC ETC*/
 }
 
 .card-drag .infos .name {
-    color: var(--color-black)!important;
-    text-decoration: none!important;
+    color: var(--color-black) !important;
+    text-decoration: none !important;
 
 }
 
@@ -402,8 +410,8 @@ Pendenter/Entregue ETC ETC*/
 
 .icon-action {
     margin-left: 10px;
-    color: var(--color-black)!important;
-    text-decoration: none!important;
+    color: var(--color-black) !important;
+    text-decoration: none !important;
     font-size: 16px;
     width: 35px;
     height: 35px;
@@ -486,7 +494,7 @@ Pendenter/Entregue ETC ETC*/
     display: inline-block;
     width: 50px;
     height: 25px;
-    
+
 }
 
 .switch input {
@@ -523,15 +531,16 @@ Pendenter/Entregue ETC ETC*/
     transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     /*Make it changed the color when checked*/
     background-color: var(--color-primary);
 }
 
-input:focus + .slider {
+input:focus+.slider {
     box-shadow: 0 0 1px var(--color-primary);
 }
-input:checked + .slider:before {
+
+input:checked+.slider:before {
     /*Make the bottom slide to right when checked*/
     transform: translateX(26px);
     -webkit-transform: translateX(26px);
@@ -547,6 +556,7 @@ input:checked + .slider:before {
     /*tranforming into a circle slider on off*/
     border-radius: 50%;
 }
+
 /* -=-==-=-==-===-=-Ended the check buttom for enable/disable -=-==-=-==-===-=-*/
 
 
@@ -578,7 +588,7 @@ input:checked + .slider:before {
     margin: 0px;
 }
 
-.tempo.disabled  label {
+.tempo.disabled label {
     opacity: 0.65;
 }
 
@@ -606,4 +616,36 @@ input:checked + .slider:before {
     margin-right: 20px;
     margin-bottom: 0px;
     color: var(--color-black);
+}
+
+.form-sm {
+    width: 150px;
+}
+
+.table {
+    font-size: 16px;
+
+}
+
+.table td {
+    color: var(--color-text);
+    vertical-align: middle;
+}
+
+.badge {
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.badge-success {
+    border: 1px solid var(--color-green);
+    color: var(--color-green);
+}
+
+.badge-danger {
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+}
+.color-red  {
+    color: var(--color-red)!important;
 }
