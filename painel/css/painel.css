@@ -677,3 +677,13 @@ input:checked+.slider:before {
 .detalhes-empresa textarea {
     height: 250px;
 }
+
+.container-cep .form-control {
+    padding-right: 75px;
+}
+
+.container-cep .btn {
+    float: right;
+    margin-top: -45px;
+    margin-right: 10px;
+}
