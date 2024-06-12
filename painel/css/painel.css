@@ -687,3 +687,13 @@ input:checked+.slider:before {
     margin-top: -45px;
     margin-right: 10px;
 }
+
+
+.horario .form-control {
+    /*Alteramos isso para nao cortar o texto*/
+    height: 52px;
+}
+
+.horario .btn-red {
+    margin-top: 30px !important;
+}
