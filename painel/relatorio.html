@@ -86,13 +86,178 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="menus-config">
-                                <a href="#" class="btn btn-sm btn-white active">
+                                <a href="#" class="btn btn-sm btn-white ">
                                     <i class="fas fa-dollar-sign"></i> Faturamento
                                 </a>
 
-                                <a href="#" class="btn btn-sm btn-white ">
+                                <a href="#" class="btn btn-sm btn-white active ">
                                     <i class="fas fa-history"></i> Histórico de Vendas
                                 </a>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-5 hidden" id="faturamento">
+                            <p class="title-categoria mb-4">
+                                <b> Acompanhe suas Vendas e Faturamento por Período</b>
+                            </p>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <p class="title-categoria mb-0">
+                                            <b> Data Início:</b>
+                                        </p>
+                                        <input type="date" class="form-control"/>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <p class="title-categoria mb-0">
+                                            <b> Data Fim:</b>
+                                        </p>
+                                        <input type="date" class="form-control"/>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <p class="title-categoria mb-0">
+                                            <b> Categoria:</b>
+                                        </p>
+                                        <select class="form-control">
+                                            <option value="0">Todas</option>
+                                            <option value="1">Delivery</option>
+                                            <option value="2">Retirada</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-3">
+                                    <a href="#" class="btn btn-yellow  btn-sm mt-4" >
+                                        <i class="fas fa-search"></i>&nbsp; Filtrar Dados
+                                    </a>
+
+                                </div>
+                            </div>
+
+                            <div class="row mt-5">
+                                <div class="col-3">
+                                    <div class="card card-address cursor-defalt mb-3">
+                                        <div class="img-icon-details">
+                                            <i class="fas fa-dollar-sign"></i>
+                                        </div>
+                                        <div class="infos">
+                                            <p class="text mb-0"><b>Total:</b></p>
+                                            <p class="value-card mb-0"><b>R$100,00</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="card card-address cursor-defalt mb-3">
+                                        <div class="img-icon-details">
+                                            <i class="fas fa-utensils"></i>
+                                        </div>
+                                        <div class="infos">
+                                            <p class="text mb-0"><b>Nº pedidos:</b></p>
+                                            <p class="value-card mb-0"><b>10</b></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card card-address cursor-defalt mb-3">
+                                        <div class="img-icon-details">
+                                            <i class="fas fa-search-dollar"></i>
+                                        </div>
+                                        <div class="infos">
+                                            <p class="text mb-0"><b>Ticket Médio:</b></p>
+                                            <p class="value-card mb-0"><b>R$10,00</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="card">
+                                        <canvas id="graficofaturamento">
+
+                                        </canvas>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-5"  id="historico">
+                            <p class="title-categoria mb-4">
+                                <b> Filtre todos os pedidos realizados.</b>
+                            </p>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <p class="title-categoria mb-0">
+                                            <b> Data Início:</b>
+                                        </p>
+                                        <input type="date" class="form-control"/>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <p class="title-categoria mb-0">
+                                            <b> Data Fim:</b>
+                                        </p>
+                                        <input type="date" class="form-control"/>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-3">
+                                    <a href="#" class="btn btn-yellow  btn-sm mt-4" >
+                                        <i class="fas fa-search"></i>&nbsp; Filtrar Dados
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card card-table mt-5">
+                                <div class="table-responsive">
+                                    
+                                <table id="data-table" class="table data-table">
+                                    <thead>
+                                        <tr>
+                                            <th># Codigo</th>
+                                            <th>Cliente</th>
+                                            <th>Tipo</th>
+                                            <th>Pagamento</th>
+                                            <th>Criado em: </th>
+                                            <th>Status</th>
+                                            <th>(R$) Total</th>
+                                            <th>Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#1</td>
+                                            <td>JOSE DA SILVA</td>
+                                            <td>Delivery</td>
+                                            <td>Dinheiro</td>
+                                            <td>25/10/2021</td>
+                                            <td><i class="fas fa-check"></i> Concluído</td>
+                                            <td><b class="color-green">R$100,00</b></td>
+                                            <td><a href="#" class="btn btn-white btn-sm"><i class="fas fa-receipt"></i> Detalhes</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>#2</td>
+                                            <td>PAULA FERREIRA</td>
+                                            <td>Retirada</td>
+                                            <td>Cartão de Crédito</td>
+                                            <td>25/10/2021</td>
+                                            <td><i class="fas fa-check"></i> Concluído</td>
+                                            <td><b class="color-green">R$80,00</b></td>
+                                            <td><a href="#" class="btn btn-white btn-sm"><i class="fas fa-receipt"></i> Detalhes</a></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th colspan="6"></th>
+                                            <th>R$180,00</th>
+                                            <th colspan="1"></th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                </div>
 
                             </div>
                         </div>

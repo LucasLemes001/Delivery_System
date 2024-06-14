@@ -697,3 +697,17 @@ input:checked+.slider:before {
 .horario .btn-red {
     margin-top: 30px !important;
 }
+
+
+/* >>>>>RELATORIOS.HTML <<<<<<*/
+
+.value-card {
+    color: var(--color-black);
+    font-size: 20px;
+}
+
+.card-table, .data-table  {
+    font-size: 14px !important;
+
+}
+
