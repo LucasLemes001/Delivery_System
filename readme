@@ -9,8 +9,10 @@ Powerfull links:
     Js Animation - https://wowjs.uk/
     CSS DISPLAY FELX - https://flexbox.help/
 
-
-
+ ============================= =============================
+        Used to stabelish the Data Base models.
+ ============================== ============================
+    I create the structure of the API using: MindMaster
 
 
 Inside the ./css/main.css:
@@ -25,14 +27,7 @@ Inside the ./css/main.css:
 #     src: url('../fonts/Poppins-Regular.otf');
 # }
 
-    * Configure the Colors Variable we going to use in our project, Saving some time and space,
-    for not doing all the configuration manually in each elements. Did just like this:
-        # * :root {
-        #     --color-name_as_you_wish: #colorcode;
-        #     }
-
-
-
+   
  =============================
         TIPS TO HTML/CSS
  ==============================

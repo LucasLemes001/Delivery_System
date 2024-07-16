@@ -58,6 +58,7 @@ b {
 .width-fix {
     /* This is used to centralize all class that uses this*/
     width: calc(100% - 20px);
+    max-width: 800px;
     margin: 0px auto;
 }
 
